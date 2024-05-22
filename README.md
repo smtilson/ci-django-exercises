@@ -19,6 +19,17 @@ These notes are for use later when I need to write part of the deployment sectio
 10. In the `settings.py` file located in the `my_project` directory, change `DEBUG=True` to `DEBUG=False`.
 11. While in `settings.py`, append `, '.herokuapp.com'` to the end of the `ALLOWED_HOSTS` list (if there are no other hosts listed, simply add `'.herokuapp.com'`). (it says to remember the comma, but this is only relevant if there are other hosts, right?)
 
-(is this even a deployment step?)
+(is this even a deployment step? I guess so since we will deploy from github and need the procfile)
 
-12. Save the above using `git add .`, `git commit -m "set up app for deployment"`, and `git push`. 
+12. Push these changes to GitHub.
+13. Navigate to the 'Deploy' tab of your app on Heroku and enable 'Connect to GitHub' in the 'Deployment method' section.
+14. Enter the name of the repository for the project in the search box and click 'Search.'
+15. Select the repository from the list of search results.
+16. Click 'Deploy Branch' to begin a manual deployment of the relevant branch.
+
+(is this a different deployment section?)
+
+17. Scroll up and open the 'Resources' tab.
+there are steps about adding eco dynos and making sure there is no db installed yet. The first isn't entirely relevant to this but will be, not sure about the second. The steps are saved in logseq.
+
+
