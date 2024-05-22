@@ -24,9 +24,9 @@ SECRET_KEY = 'django-insecure-kk$r-q&e2#-#8sf^q&1_r+k=4i%cu*sau+$)l#y)xarqm(6ri_
 
 # SECURITY WARNING: don't run with debug turned on in production!
 ## should I acutally change this? It was only set to false as one of the deploy to heroku steps
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['localhost','.herokuapp.com']
 
 
 # Application definition
