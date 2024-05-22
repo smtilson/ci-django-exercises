@@ -6,6 +6,7 @@ These notes are for use later when I need to write part of the deployment sectio
 3. Pick a unique name for your App, select the appropriate region, and click 'Create app.'
 4. Click on the 'Settings' tab, scroll down to the 'Config Vars' section, and click 'Reveal Config Vars.'
 5. Add a key-value pair with key `DISABLE_COLLECTSTATIC` and value `1`.
+6. Add a key-value pair with key `DATABASE_URL`and value the database url provided. (If you no longer have access to this, please contact me.)
 
 (should this be a different deployment section)
 
@@ -32,4 +33,11 @@ These notes are for use later when I need to write part of the deployment sectio
 17. Scroll up and open the 'Resources' tab.
 there are steps about adding eco dynos and making sure there is no db installed yet. The first isn't entirely relevant to this but will be, not sure about the second. The steps are saved in logseq.
 
+Environment variables
+18. Create a file called env.py in the root directory. Add
+`import os
 
+os.environ.setdefault(
+    "DATABASE_URL", >database_url<)`
+where you replace `>database_url<` with the database url provided.
+(If you no longer have access to this, please contact me.)
