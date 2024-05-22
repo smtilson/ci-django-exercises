@@ -79,15 +79,16 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-'''DATABASES = {
+'''
+DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}'''
+}
 
 
 # Password validation
