@@ -23,8 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-kk$r-q&e2#-#8sf^q&1_r+k=4i%cu*sau+$)l#y)xarqm(6ri_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-## should I acutally change this?
-DEBUG = False
+## should I acutally change this? It was only set to false as one of the deploy to heroku steps
+DEBUG = True
 
 ALLOWED_HOSTS = ['.herokuapp.com']
 
