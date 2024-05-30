@@ -41,3 +41,14 @@ os.environ.setdefault(
     "DATABASE_URL", >database_url<)`
 where you replace `>database_url<` with the database url provided.
 (If you no longer have access to this, please contact me.)
+
+static files deployment
+19. install `whitenoise~=5.3.0`
+20. add `'whitenoise.middleware.WhiteNoiseMiddleware',` to the `MIDDLEWARE`variable in settings.py directly after the SecurityMiddleware from Django.
+21. add `STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')` to settings.py
+22. run `python3 manage.py collectstatic`in the terminal
+23. ?? check version of python3 with `python3 -v`?? (in my case it was python-3.12.2)
+24. copy supported run time closest to yours in https://devcenter.heroku.com/articles/python-support#specifying-a-python-version (in my case it is python-3.12.3)
+25. add `runtime.txt` file to root and add the run time version (in my case this is python-3.12.3)
+
+
