@@ -5,4 +5,4 @@ from .models import About
 def about(request):
     about = About.objects.order_by("date_updated").first()
     context = {'about':about}
-    return render(request, "about/about.html",context)
+    return render(request, "about/about.html", context)
