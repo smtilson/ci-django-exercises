@@ -75,3 +75,7 @@ cloudinary set up
 31. go to the dashboard and copy the CLOUDINARY_URL (mine is CLOUDINARY_URL=cloudinary://736759862794426:NIk-OfM7ERFV3NWf9KoSMKxTXlc@djf0ieux6).
 
 32. go to settings and add the following to the list of installed apps. `cloudinary_storage` must be immediately after `django.contrib.staticfiles`, and add `cloudinary` as well.
+
+33. Go to settings in Heroku, Add CLOUDINARY_URL to the config vars.
+
+34. 

@@ -51,6 +51,10 @@ body {
     height: auto;
 }
 
+.width75 {
+    width: 75%
+}
+
 .author {
     color: white;
     margin: 4px;
