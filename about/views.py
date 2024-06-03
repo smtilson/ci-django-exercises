@@ -17,6 +17,6 @@ def about(request):
     about = About.objects.order_by("date_updated").first()
     collaborate_form = CollaborateForm()
     
-    context = {'about':about, 'form':collaborate_form}
+    context = {'about':about, 'collaborate_form':collaborate_form}
 
     return render(request, "about/about.html", context)
