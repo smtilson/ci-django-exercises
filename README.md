@@ -62,6 +62,16 @@ static files deployment
 
 27. got to heroku page for the deployed app. click on settings. scroll down to config vars and remove the key value pair for DISABLE_COLLECTSTATIC
 
-38. then redeploy??
+28. then redeploy??
 
+I think the above about collect static can sort of be collapsed, like take out the earlier stuff about collect static as well.
 
+cloudinary set up
+
+29. download required packages for cloudinary api `pip3 install cloudinary~=1.36.0 dj3-cloudinary-storage~=0.0.6 urllib3~=1.26.15` (this will likely be done by just having them install the requirements with pip).
+
+30. sign up to cloudinary
+
+31. go to the dashboard and copy the CLOUDINARY_URL (mine is CLOUDINARY_URL=cloudinary://736759862794426:NIk-OfM7ERFV3NWf9KoSMKxTXlc@djf0ieux6).
+
+32. go to settings and add the following to the list of installed apps. `cloudinary_storage` must be immediately after `django.contrib.staticfiles`, and add `cloudinary` as well.

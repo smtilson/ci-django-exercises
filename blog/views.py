@@ -77,6 +77,7 @@ def comment_delete(request, slug, comment_id):
     View for deleting comments.
     """
     queryset = Post.objects.filter(status=1)
+    # this does not seem to be used anywhere.
     post = get_object_or_404(queryset, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id)
     
